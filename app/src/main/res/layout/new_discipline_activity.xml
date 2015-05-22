@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDisciplineActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textColor="@android:color/white"
+                android:text="Nome: "
+                android:labelFor="@+id/txtDisciplinaNome"/>
+
+            <EditText
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:padding="4sp"
+                android:maxLength="32"
+                android:hint="Nome formal completo da disciplina "
+                android:id="@+id/txtDisciplinaNome"
+                android:background="@drawable/edittext_gradient"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textColor="@android:color/white"
+                android:text="Abreviatura: "
+                android:labelFor="@+id/txtDisciplinaNomeAbreviado" />
+            <EditText
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:hint="Nome abreviado da matéria (ex.: Lab. BD)"
+                android:textSize="14sp"
+                android:padding="4sp"
+                android:maxLength="15"
+                android:id="@+id/txtDisciplinaNomeAbreviado"
+                android:background="@drawable/edittext_gradient"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textColor="@android:color/white"
+                android:labelFor="@+id/txtDisciplinaProfessor"
+
+                android:text="Professor: "/>
+            <EditText
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:padding="4sp"
+                android:maxLength="32"
+                android:hint="Nome do professor "
+                android:id="@+id/txtDisciplinaProfessor"
+                android:background="@drawable/edittext_gradient"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25"
+                android:textColor="@android:color/white"
+                android:text="Dia semanal: "
+                android:layout_gravity="center_vertical"
+                android:labelFor="@+id/spnDiaSemanal" />
+            <Spinner
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:background="@drawable/edittext_gradient"
+                android:id="@+id/spnDiaSemanal"
+                android:textSize="14sp"
+                android:padding="4sp"
+                android:entries="@array/weekdays" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:id="@+id/btnNovaDisciplinaCancela"
+                android:onClick="cancelaNovaDisciplina"
+                android:text="Cancelar e voltar" />
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:id="@+id/btnNovaDisciplinaCadastra"
+                android:onClick="cadastraDisciplina"
+                android:text="Cadastrar"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

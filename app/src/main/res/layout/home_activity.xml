@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:text="Bem-vindo, Diego!"
+            android:drawableStart="@android:drawable/ic_dialog_info"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:onClick="reseta"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:text="Nova disciplina"
+                android:drawableStart="@android:drawable/ic_menu_add"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnNovaDisciplina"
+                android:onClick="novaDisciplina" />
+
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:text="Nova prova"
+                android:drawableStart="@android:drawable/ic_menu_add"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnNovaProva"
+                android:onClick="novaProva" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Ver provas"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnAtualizaNota"
+                android:onClick="verNotas" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Ver disciplinas"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnVerNotas"
+                android:onClick="verDisciplinas" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Próximas provas:"
+            android:layout_margin="20sp"
+            android:drawableStart="@android:drawable/ic_menu_day"
+            android:textSize="25sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="Discip."
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:background="@drawable/edittext_gradient"/>
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="Descrição"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".4167"
+                android:background="@drawable/edittext_gradient"/>
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="Data / Hora"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".3333"
+                android:background="@drawable/edittext_gradient"/>
+
+
+        </LinearLayout>
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="0sp"
+            android:background="@drawable/edittext_gradient"
+            android:id="@+id/lvProximasProvas"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

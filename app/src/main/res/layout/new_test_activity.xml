@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".NewTestActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Disciplina: "
+                android:labelFor="@+id/spnDisciplina"
+                android:layout_gravity="center_vertical"/>
+            <Spinner
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:id="@+id/spnDisciplina"
+                android:textSize="14sp"
+                android:padding="4sp"
+                android:background="@drawable/edittext_gradient" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:labelFor="@+id/txtProvaDescricao"
+                android:text="Descrição: "/>
+            <EditText
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@drawable/edittext_gradient"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:padding="4sp"
+                android:maxLength="32"
+                android:id="@+id/txtProvaDescricao"
+                android:hint="Descrição da prova (ex: prova 1)"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Data: "
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:id="@+id/btnDefineData"
+                android:onClick="defineData"
+                android:text="Toque para definir data"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:text="Nota: "
+                android:layout_gravity="center_vertical" />
+            <EditText
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:background="@drawable/edittext_gradient"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:padding="4sp"
+                android:id="@+id/txtnota"
+                android:numeric="decimal"
+                android:maxLength="2"
+                android:inputType="number"
+                android:hint="Nota (de 0 a 10, caso houver)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:onClick="cancelaNovaProva"
+                android:text="Cancelar e voltar"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content"
+                android:onClick="cadastraProva"
+                android:text="Cadastrar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

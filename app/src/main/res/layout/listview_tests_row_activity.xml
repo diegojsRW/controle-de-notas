@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040">
+    <TextView android:id="@+id/txtdiscipline"
+        android:textColor="@android:color/white"
+        android:text="Disciplina"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="10sp"
+        android:layout_weight=".25"/>
+    <TextView android:id="@+id/txtdescription"
+        android:textColor="@android:color/white"
+        android:text="Descrição"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="10sp"
+        android:layout_weight=".4167"/>
+    <TextView android:id="@+id/txtdatetime"
+        android:textColor="@android:color/white"
+        android:text="Data / Hora"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:textSize="10sp"
+        android:layout_weight=".3333"/>
+</LinearLayout>
+
+    <!--MDisciplina	Descrição	Data-->

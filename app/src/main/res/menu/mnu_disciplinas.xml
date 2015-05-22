@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/deletar"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Remover disciplina" />
+    <item
+        android:id="@+id/editar"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Editar disciplina" />
+    <item
+        android:id="@+id/listarprovas"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Ver provas" />
+    <item
+        android:id="@+id/compartilha"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Compartilhar" />
+        
+</menu>
